@@ -5,28 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rakesh - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-</head> 
+  <!-- Font Awesome Icons for contact section -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</head>
 <body>
   <!-- Navigation -->
-  <nav>
-    <div class="nav-container">
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
+  <nav class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- Header -->
-  <header>
+  <!-- Header Section -->
+  <header id="home">
     <div class="header-content">
       <h1>Rakesh</h1>
-      <p>I am a B.Tech student in Data Science at Mvgr College of Engineering Vizianagaram. 
-        I am passionate about using data to solve real-world problems.</p>
-        
+      <p>I am a B.Tech student in Data Science at Mvgr College of Engineering Vizianagaram. I am passionate about using data to solve real-world problems.</p>
     </div>
   </header>
 
@@ -39,9 +38,7 @@
         </div>
         <div class="about-text">
           <h2>About Me</h2>
-          <p>I am a dedicated Data Science student with strong skills in programming, statistics, and machine learning. 
-            I am proficient in data visualization and communication. My goal is to leverage data-driven insights 
-            to solve complex problems and make meaningful contributions to the field of data science.</p>
+          <p>I am a dedicated Data Science student with strong skills in programming, statistics, and machine learning. I am proficient in data visualization and communication. My goal is to leverage data‑driven insights to solve complex problems and make meaningful contributions to the field of data science.</p>
         </div>
       </div>
     </div>
@@ -79,17 +76,16 @@
     </div>
   </section>
 
- <!-- Certifications Section -->
-<section id="certifications">
-  <div class="container">
-    <h2>Certifications</h2>
-    <div class="cert-grid" id="certGrid">
-      <!-- Certificates will be added by JavaScript -->
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="cert-grid" id="certGrid">
+        <!-- Certificates will be injected via JavaScript -->
+      </div>
+      <button id="viewMoreCerts" class="view-more">View All Certificates</button>
     </div>
-    <button id="viewMoreCerts" class="view-more">View All Certificates</button>
-  </div>
-</section>
-
+  </section>
 
   <!-- Projects Section -->
   <section id="projects" class="bg-gray">
@@ -99,24 +95,20 @@
         <div class="project-card">
           <div class="project-content">
             <h3>To Supply Leftover Food to Poor</h3>
-            <p>This project aims to develop a Salesforce-based application designed to   
-                manage andstreamline the distribution of leftover food to underserved communities.   
-                The primary goal is to enhance the efficiency of food drop-offs, coordinate tasks,   
-                manage volunteers, and generate insightful reports. </p>
+            <p>This project aims to develop a Salesforce‑based application designed to manage and streamline the distribution of leftover food to underserved communities. The primary goal is to enhance the efficiency of food drop‑offs, coordinate tasks, manage volunteers, and generate insightful reports.</p>
             <div class="project-tags">
               <span>Python</span>
               <span>Data Analysis</span>
             </div>
           </div>
         </div>
-      </div>
-      <div class="projects-grid">
         <div class="project-card">
           <div class="project-content">
             <h3>Library Management System</h3>
-            <p>This project is a Library Management System designed to help organize books, manage users, and streamline borrowing/return processes. The system ensures easy book tracking, automated user management, and an intuitive dashboard for librarians and users.. </p>
+            <p>This project is a Library Management System designed to help organize books, manage users, and streamline borrowing/return processes. The system ensures easy book tracking, automated user management, and an intuitive dashboard for librarians and users.</p>
             <div class="project-tags">
-              <span>HTML,CSS</span>
+              <span>HTML</span>
+              <span>CSS</span>
               <span>JavaScript</span>
             </div>
           </div>
@@ -132,11 +124,7 @@
         <div class="resume-text">
           <h2>Resume</h2>
           <p>Download my resume to learn more about my education, experience, and skills.</p>
-          <a href="https://drive.google.com/file/d/1FZEGtAFs9rAUZZCcK3iZrq-WYHvnhk3y/view?usp=drive_link" 
-             target="_blank" 
-             class="download-btn">
-            Download Resume
-          </a>
+          <a href="https://drive.google.com/file/d/1Se9UoByoxRLo5zU2Qb7J-04OhUcNqZyM/view?usp=drive_link" target="_blank" class="download-btn">Download Resume</a>
         </div>
         <div class="resume-image">
           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800" alt="Working">
@@ -146,34 +134,29 @@
   </section>
 
   <!-- Contact Section -->
-<section id="contact" class="bg-gray">
-  <div class="container">
-    <h2>Let Us Work Together...</h2>
-    <div class="contact-grid">
-      <a href="mailto:basinarakesh21@gmail.com" class="contact-card">
-        <i class="fa-solid fa-envelope icon"></i>
-        <span>Email</span>
-      </a>
-      <a href="tel:9346321109" class="contact-card">
-        <i class="fa-solid fa-phone icon"></i>
-        <span>Phone</span>
-      </a>
-      <a href="https://wa.me/919346321109" target="_blank" class="contact-card">
-        <i class="fa-brands fa-whatsapp icon"></i>
-        <span>WhatsApp</span>
-      </a>
-      <a href="https://www.linkedin.com/in/rakesh-basina-b5aa9a2bb/" target="_blank" class="contact-card">
-        <i class="fa-brands fa-linkedin icon"></i>
-        <span>LinkedIn</span>
-      </a>
+  <section id="contact" class="bg-gray">
+    <div class="container">
+      <h2>Let Us Work Together...</h2>
+      <div class="contact-grid">
+        <a href="mailto:basinarakesh21@gmail.com" class="contact-card">
+          <i class="fa-solid fa-envelope icon"></i>
+          <span>Email</span>
+        </a>
+        <a href="tel:9346321109" class="contact-card">
+          <i class="fa-solid fa-phone icon"></i>
+          <span>Phone</span>
+        </a>
+        <a href="https://wa.me/919346321109" target="_blank" class="contact-card">
+          <i class="fa-brands fa-whatsapp icon"></i>
+          <span>WhatsApp</span>
+        </a>
+        <a href="https://www.linkedin.com/in/rakesh-basina-b5aa9a2bb/" target="_blank" class="contact-card">
+          <i class="fa-brands fa-linkedin icon"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
     </div>
-  </div>
-</section>
-
-<!-- Font Awesome Icons (for better icons) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
-<script src="script.js"></script>
-
+  </section>
 
   <!-- Footer -->
   <footer>
